@@ -39,9 +39,9 @@ class Truck extends Vehicle
 
     public function storageStatus(): string
     {
-        if (($this->storage)>0) {
-        return "in filling";
-        } else { return "full";
+        if (($this->load)==$this->storage) {
+        return "full";
+        } else { return "in filling";
         }
 
     }
